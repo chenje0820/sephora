@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link type="image/x-icon" href="img/favicon.ico" rel="shortcut icon">
+		<link rel="stylesheet" href="css/regis.css">
+		<link rel="stylesheet" href="css/common.css">
+	</head>
+	<body>
+		<!-- header部分 -->
+		<header class="header">
+			<div class='header_box'>
+				<div class="logo_and_regis">
+					<a href="homepage.html"><img src="img/sep_top_Logo.png" alt=""></a>
+					<span>欢迎注册</span>
+				</div>
+				<div class="has_login">
+					<span>已有账号?</span>
+					<div class="im_login">
+						<a href="login.html">立即登录</a>
+						<a class="dire_trangle"></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- regis部分 -->
+		<div class="regins_content_box">
+			<div class="regins_content">
+				<div class="regins_content_items">
+					<!-- 图形验证 -->
+					<div class="verify picture_verify">
+						<p>图片验证码</p>
+						<input id="picture" class="input_text" type="text">
+						<span class="error_img_tit"></span>
+						<div class="picture_code">获取验证码</div>
+					</div>
+					<div class="picture_errorTip"></div>
+					
+					<!-- 手机号 -->
+					<div class="verify phone_verify">
+						<p>手机号</p>
+						<input id="userPhone" class="input_text" type="text" placeholder="请输入您的手机号">
+						<span class="error_img_tit"></span>
+						<div class="get_random_code">获取验证码</div>
+					</div>
+					<div class="phone_errorTip"></div>
+					
+					<!-- 短信验证 -->
+					<div class="verify phone_code_verify">
+						<p>短信验证</p>
+						<input id="phone_code" class="input_text" type="text">
+						<span class="error_img_tit"></span>
+					</div>
+					<div class="phone_code_errorTip"></div>
+
+					<!--密码-->
+					<div class="verify passWord">
+						<p>输入密码</p>
+						<input id="userPass" class="input_text" type="password" placeholder="6~16位大小写英文字母、数字或符号的组合">
+						<span class="error_img_tit"></span>
+					</div>						
+					<div class="passWord_errorTip"></div>
+					
+					<!-- 确认密码 -->
+					<div class="verify re_password_verify">
+						<p>确认密码</p>
+						<input id="re_userPass" class="input_text" type="password" placeholder="请再次输入密码">
+						<span class="error_img_tit"></span>
+					</div>
+					<div class="re_password_errorTip"></div>
+					
+					<!-- 注册按钮框 -->
+					<div class="regis_btn">同意条款并注册</div>
+					<div class="read_change">
+						<input class="check_box" type="checkbox" checked="checked">
+						<span>已阅读</span>
+						<a href="#">《丝芙兰用户服务协议》</a>
+						<span>和</span>
+						<a href="#">《丝芙兰隐私政策》</a>
+					</div>
+					<div class="use_email_box">
+						<ul class="use_email">
+							<li>使用邮箱注册</li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- copyRight -->
+		<div class="copyRight_box">
+			<div class="copyRight">
+				<ul class="copyRight_info">
+					<li>
+						<a href="#" class="police_img">
+							沪公网安备 31010602003121号
+						</a>
+						<a href="#">中国互联网电子商务诚信示范企业认证书</a>
+						<a href="#">食品经营许可证</a>
+						<a href="#">网站使用条款</a>
+						<a href="#">严正声明</a>
+					</li>
+					<li>
+						<sapn>本网站隶属于丝芙兰（上海）化妆品销售有限公司（企业法人营业执照）</sapn>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/regis.js"></script>
+<script type="text/javascript" src="js/getRandomStyle.js"></script>
+<script type="text/javascript">
+	window.onload = function(){
+		let verifyDoms = $(".verify");
+		for(let i =0;i<verifyDoms.length;i++){
+			verifyDoms[i].children[1].onclick = function(){
+				this.placeholder = "";
+				this.nextElementSibling.style.display ='block';
+				this.style.borderBottom = "1px solid #000";
+				$1(".error_img_tit")[i].onclick = function(){
+					$1(".error_img_tit")[i].previousElementSibling.value = " ";
+				}	
+			}
+		
+// 			verifyDoms[i].children[1].onblur = function(){
+// 				this.nextElementSibling.style.display ='none';
+// 				this.style.borderBottom = "1px solid #ccc";
+// 			}
+		}
+		
+		//获取随机验证码
+		$1(".picture_code")[0].onclick = function(){
+			let random = randomCode(4);
+			this.style.color = getColor();
+			this.innerHTML = random;
+		}
+		
+		
+		//验证
+		//参数:验证对象,出错对象,提示文字
+		function verify(bds,verDom,errorDom,titText,fun){
+			if(verDom.value != ""){
+				if(bds){
+					verDom.nextElementSibling.style.display ='block';
+					verDom.nextElementSibling.style.backgroundPosition = "-20px 0";
+					verDom.style.borderBottom = "1px solid #4cd964";
+					errorDom.innerHTML = "";	
+					fun&&fun();
+				}else{
+					verDom.nextElementSibling.style.display ='block';
+					verDom.nextElementSibling.style.backgroundPosition = "-38px -14px";
+					errorDom.innerHTML = titText;
+					errorDom.style.cssText=`
+															color:red;
+															font-size:14px;
+															`;
+				}
+			}
+		}
+		$1(".regis_btn")[0].onclick = function(){
+			//手机号
+			let r1 = /^[1][3,4,5,7,8][0-9]{9}$/;//手机号的正则
+			verify(r1.test($1("#userPhone").value),$1("#userPhone"),$1(".phone_errorTip")[0],"请输入正确的手机号",function(){
+				//密码验证
+				let r2 = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,16}$//密码的正则
+				verify(r2.test($1("#userPass").value),$1("#userPass"),$1(".passWord_errorTip")[0],"请输入正确的密码格式",function(){
+					//确定密码
+					verify($1("#userPass").value == $1("#re_userPass").value,$1("#re_userPass"),$1(".re_password_errorTip")[0],"两次密码输入不一致",function(){
+						//图片验证码
+						verify($1("#picture").value == $1(".picture_code")[0].innerHTML,$1("#picture"),$1(".picture_errorTip")[0],"图片验证码出错",function(){
+						
+							if($1(".check_box")[0].checked){
+								$1(".regis_btn")[0].style.backgroundColor = "red";
+								//所有的判断做完后,发送ajax请求
+								let xhr = new XMLHttpRequest();
+								xhr.open("get","php/perInfoTest.php?userPhone="+$1("#userPhone").value,true);
+								xhr.onreadystatechange = function(){
+									if(xhr.readyState==4 && xhr.status==200){
+										if(xhr.responseText=="1"){
+											$1(".phone_errorTip")[0].innerHTML = "该手机号已注册";
+											$1(".phone_errorTip")[0].style.color = "red";
+											$1("#userPhone").nextElementSibling.style.backgroundPosition = "-38px -14px";
+								
+										}else{
+											$1(".phone_errorTip")[0].innerHTML = "";
+											//添加
+											let xhr = new XMLHttpRequest();
+											//2.设置对象参数
+											xhr.open("post","php/regis.php",true);
+											//3.设置回调函数
+											xhr.onreadystatechange = function(){
+												//5.接受响应
+												if(xhr.readyState == 4 && xhr.status == 200){
+													if(xhr.responseText == "1"){
+														location.href="login.html";
+													}
+												}
+											}
+											//4.发送请求
+											xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");//设置请求头
+											xhr.send(`userPhone=${$1("#userPhone").value}&userPass=${$1("#userPass").value}`);			
+										}
+									}
+								}
+								//4.发送请求
+								xhr.send();	
+							}
+						});
+					});
+				});
+			});
+		}	
+	}	
+	function $1(str){
+		if(str.charAt(0)=="#"){
+			return document.getElementById(str.substring(1));
+		}else if(str.charAt(0)=="."){
+			return document.getElementsByClassName(str.substring(1));
+		}else{
+			return document.getElementsByTagName(str);
+		}
+	}
+</script>

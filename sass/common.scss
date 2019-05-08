@@ -1,0 +1,461 @@
+@charset "utf-8";
+body, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, html, input, li, ol, p, select, span, strong, table, tbody, td, textarea, th, thead, tr, ul{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+
+// header部分
+.header_box{
+	width:100%;
+	background-color:black;
+	.header_content{
+		width:1190px;
+		height:36px;
+		line-height:36px;
+		// background-color:black;
+		margin:0 auto;
+		font-size:12px;
+		a{
+			color:white;
+		}
+		a:hover{
+			color:red;
+		}
+		.cont_left{
+			color:white;
+			float:left;
+			a{
+				margin:0 12px;
+			}
+			span{
+				margin:0 12px;
+			}
+		}
+		.cont_center{
+			float:left;
+			margin:0 22px;
+			.cont_marquee{
+				height:36px;
+				width:100px;
+				font-size:16px;
+				border: 7px solid black;
+				box-sizing: border-box;
+			}		
+		}
+		.cont_right{
+			width:500px;
+			float:right;
+			span{
+				margin-left:22px;
+				display:inline-block;
+			}
+			.my_sephora{
+				position: relative;
+				.imgs{
+					width:12px;
+					height:12px;
+					background:url(../img/my-sephora.png);
+					margin-bottom: -2px;
+				}
+				
+				.direct_top{
+					width: 10px;
+					height: 6px;
+					background: url(../img/top_angle_w.png) -2px -16px;
+					margin-left: 0px;
+					margin-bottom: 1px;
+				}
+				.my_order{
+					width:90px;
+					height:30px;
+					background-color:white;
+					line-height:30px;
+					text-align:center;
+					font-size:14px;
+					margin-left:0;
+					position:absolute;
+					left:20px;
+					top:36px;
+					border:1px solid #c8c8c8;
+					border-top:0;
+					display: none;
+					z-index:4;
+					a{
+						color:black;
+					}
+					a:hover{
+						color:red;
+					}
+					// display:none;
+					.big_direct_bot{
+						@extend .direct_top;
+						width:15px;
+						height:6px;
+						background-position: -38px -1px;
+						position: absolute;
+						left: 40%;
+						top: -7px;
+					}
+				}	
+			}
+		}
+		
+	}
+}
+//search部分
+.search{
+	width:100%;
+	background-color:white;
+	.search_box{
+		width:1190px;
+		padding-top:24px;
+		margin:0 auto;
+		.search_logo{
+			width:320px;
+			height:36px;
+			float:left;
+			img{
+				width:240px;
+				height:32px;
+				display: block;
+			}
+		}
+		.search_nav{
+			width:650px;
+			height:60px;
+			float:left;
+			.searc_inputBox{
+				height: 34px;
+				line-height:34px;
+				border:1px solid #b5b5b5;
+				position:relative;
+				input{
+					width:540px;
+					height:34px;
+					text-indent: 20px;
+					border: none;
+					float:left;
+				}
+				.search_btn{
+					float:left;
+					width:108px;
+					text-align:center;
+					font-size: 16px;
+					color:white;
+					background-color: #000000;
+				}
+				// 历史浏览框
+				.search_main_info{
+					width:540px;
+					background-color:white;
+					border:1px solid #b5b5b5;
+					border-top:0;
+					position:absolute;
+					left:-1px;
+					top:35px;
+					display: none;
+					.history_info{
+						font-size:12px;	
+						padding:12px 20px 0;
+						border-bottom:2px solid #f5f5f5;
+						.history_info_tit{
+							display: flex;
+							justify-content: space-between;
+							span:last-child{
+								color: #666;
+								font-weight: 100;
+							}
+						}
+						.history_info_content{
+							display:flex;
+							flex-wrap: wrap;
+							font-size:14px;
+							line-height:20px;
+							padding-bottom:10px;
+							a{
+								color:black;
+							}
+							a:hover{
+								font-weight: 900;
+							}
+							li{
+								flex:1;
+								padding:0 5px;
+							}
+							.product_img{
+								flex:1;
+								text-align: center;
+								img{
+									width:90px;
+									height:90px;
+								}
+							}
+							.product_brand{
+								text-align:center;
+							}
+							.product_price{
+								text-align:center;
+							}
+						}
+					}
+					.hot_info{
+						@extend .history_info;
+						border:0;
+						.hot_info_content{
+							@extend .history_info_tit;
+							display:flex;
+							flex-wrap:wrap;
+							li{
+								display: inline-block;
+								float: left;
+								margin: 0 8px 8px 0;
+								background: #f5f5f5;
+								a{
+									font-size:12px;
+									display: block;
+									color: #8a8a8a;
+									padding:0 10px;
+								}
+								a:hover{
+									font-weight: 600;
+								}
+							}
+						}
+					}
+				}
+			}
+			.search_infoIntem{
+				a{
+					display:inline-block;
+					color:#acacac;
+					padding:0 4px;
+					font-size:12px;
+				}
+				a:hover{
+					color:#ee0000;
+				}
+			}
+		}
+		.my_shoppcar{
+			width:188px;
+			height: 34px;
+			line-height:34px;
+			font-size:16px;
+			float:right;
+			border:1px solid #c8c8c8;
+			text-align: center;
+			position:relative;
+			a{
+				color:#000000;
+
+			}
+			img{
+				margin: -5px 5px;
+			}
+			.shop_num{
+				color:#ee0000;
+			}
+			.minicar_tit_box{
+				width: 412px;
+				background-color: #fff;
+				background-repeat: no-repeat;
+				border:1px solid #ddd;
+				padding:22px 0;
+				z-index:30;
+				position:absolute;
+				top:35px;
+				left:-224px;
+				cursor: pointer;
+				overflow: hidden;
+				display: none; 
+				.tit_info{
+					margin-right:30px;
+					line-height:20px;
+					.package{
+						display:inline-block;
+						float:left;
+						width:64px;
+						height:85px;
+						margin:0 10px 0 30px;
+						background: url(../img/package.png) no-repeat;
+						background-size: 100%;
+					}
+					.tit_info_right{
+						padding-top:10px;
+						text-align: left;
+						a{
+							display:inline-block;
+							margin-top:5px;
+							background-color:red;
+							line-height:20px;
+							width: 60px;
+							color:white;
+							text-align: center;
+						}
+					}
+				}
+			}
+		}
+		.my_shoppcar:hover .minicar_tit_box{
+			display:block;
+		}
+	}
+}
+.search:after{
+	content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+.search_box:after{
+	content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+//copyRight部分
+.copyRight_box{
+	width:100%;
+	line-height:21px;
+    background-color: #000;
+    font-size: 12px;
+	color: #6f6f6f;
+	overflow: hidden;
+	.copyRight{
+		width:1190px;
+		margin:0 auto;
+		padding:30px 0;
+		text-align:center;
+		a{
+			color: #6f6f6f;
+			margin: 0 22px;
+		}
+		.police_img{
+			padding-left:30px;
+			width:10px;
+			height:20px;
+			text-indent: 20px;
+			background:url(../img/police_img.png) no-repeat;	
+		}
+	}
+	
+}
+
+//滚动时出现的头部
+.search_scroll{
+	@extend .search;
+	position:fixed;
+	left:0;
+	top:-84px;
+	z-index:20;
+}
+//左侧边导航栏
+.left_aisde_nav{
+	width:30px;
+	background-color:rgba(255,255,255,.9);
+	padding:5px;
+	font-size:12px;
+	line-height:16px;
+	position:absolute;
+	text-align:center;
+	vertical-align: middle;
+	top:120px;
+	display:none;
+	li{
+		display:block;	
+		margin:20px 0;
+		color:#2c2a2a;
+	}
+	
+}
+.left_aisde_nav li.active{
+	color:#ee0000;
+}
+.active :hover{
+	color:#ee0000;
+}
+//右侧边导航
+.right_aside_nav{
+	font-size:14px;
+	text-align:center;
+	width:40px;
+	background-color:rgba(170,170,170,.6);
+	display: none;
+	.my_account_all{
+		width:40px;
+		height:40px;
+		.my_account{
+			position:relative;
+			span{
+				display:inline-block;
+			}
+			.sprite_text{
+				background-color:#555353;
+				width:80px;
+				height:40px;
+				line-height:40px;
+				color:white;
+				position: absolute;
+				top:-25px;
+				right:40px;
+				display:none;
+			}
+			.sprite_photo{
+				color:white;
+				width:40px;
+				height:40px;
+				background: url(../img/sprite_toolbar_new.png) 0 0px;
+			}
+		}
+		.my_account:hover .sprite_text{
+			display: block;
+		}
+		.my_account:hover .sprite_photo{
+			background-color:#555353;
+		}	
+	}
+	.my_shop_car{
+		@extend .my_account_all;
+		.shop_car{
+			@extend .my_account;
+			.sprite_photo{
+				background-position: 0 -40px;
+			}
+		}
+	}
+	.connect_service{
+		@extend .my_account_all;
+		.service{
+			@extend .my_account;
+			.sprite_photo{
+				background-position: 0 -160px;
+			}
+		}
+	}
+	.mobile_sephora{
+		@extend .my_account_all;
+		.sephora{
+			@extend .my_account;
+			.sprite_photo{
+				background-position: 0 -240px;
+			}
+		}
+	}
+	.come_to_top{
+		@extend .my_account_all;
+		.back_top{
+			@extend .my_account;
+			.sprite_photo{
+				background-position: 0 -280px;
+			}
+		}
+	}
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link type="image/x-icon" href="img/favicon.ico" rel="shortcut icon">
+		<link rel="stylesheet" href="css/login.css">
+		<link rel="stylesheet" href="css/common.css">
+	</head>
+	<body>
+		<!-- header部分 -->
+		<header class="header">
+			<div class='header_box'>
+				<div class="logo_and_regis">
+					<a href="homepage.html"><img src="img/sep_top_Logo.png" alt=""></a>
+				</div>
+			</div>
+		</header>
+		<!-- login部分 -->
+		<div class="login_content_box">
+			<div class="login_content">
+				<div class="login_content_box">
+					<div class="login_content_items">
+						<div class="login_sephora">登录丝芙兰官网</div>
+						<div class="error_tip"></div>
+						<div class="login login_phone_num">
+							<span class="people_photo"></span>
+							<input id="userPhone" class="phone" type="text" placeholder="手机号/邮箱">
+							<span class="error_img_tit"></span>
+						</div>
+						<div class="login passWord_num">
+							<span class="passWord_photo"></span>
+							<input id="userPass" class="passWord" type="password" placeholder="密码">
+							<span class="error_img_tit"></span>
+						</div>
+						<a class="forget_password" href="#">忘记密码?</a>
+						<div class="login_btn">登录</div>
+						<div class="read_change">
+							<input class="check_box" type="checkbox" checked="checked">
+							<p>已阅读</p>
+							<p>《丝芙兰用户服务协议》</p>
+							<p>和</p>
+							<p>《丝芙兰隐私政策》</p>
+						</div>
+						<div class="free_regis">
+							<ul class="free_regis_left">
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<ul class="free_regis_right">
+								<li>还没有账号?</li>
+								<li>
+									<a href="regis.html">免费注册</a>
+									<span></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- copyRight -->
+		<div class="copyRight_box">
+			<div class="copyRight">
+				<ul class="copyRight_info">
+					<li>
+						<a href="#" class="police_img">
+							沪公网安备 31010602003121号
+						</a>
+						<a href="#">中国互联网电子商务诚信示范企业认证书</a>
+						<a href="#">食品经营许可证</a>
+						<a href="#">网站使用条款</a>
+						<a href="#">严正声明</a>
+					</li>
+					<li>
+						<sapn>本网站隶属于丝芙兰（上海）化妆品销售有限公司（企业法人营业执照）</sapn>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/cookieTools.js"></script>
+<!-- <script type="text/javascript" src="js/regis.js"></script> -->
+<script type="text/javascript">
+	window.onload = function() {
+		$1("#userPhone").value = getCookie("userPhone");
+		$1("#userPass").value = getCookie("userPass");
+
+		let loginDom = $1(".login");
+		for (let i = 0; i < loginDom.length; i++) {
+			loginDom[i].onclick = function() {
+				$1(".error_img_tit")[i].style.display = "block";
+				$1(".error_img_tit")[i].onclick = function() {
+					$1(".error_img_tit")[i].previousElementSibling.value = "";
+				}
+			}
+			if($1('.check_box')[0].checked){
+				$1(".login_btn")[0].style.backgroundColor = "indianred";
+				$1(".login_btn")[0].onclick = function() {
+					let xhr = new XMLHttpRequest();
+					xhr.open("post", "php/login.php", true);
+					xhr.onreadystatechange = function() {
+						if (xhr.readyState == 4 && xhr.status == 200) {
+							if (xhr.responseText == "1") {
+								//存cookie
+								addCookie("userPhone", $1("#userPhone").value, 30);
+								addCookie("userPass", $1("#userPass").value, 30);
+								location.href = "homepage.html";
+							} else {
+								$1(".error_tip")[0].innerHTML = "密码或者账号错误";
+								$1(".error_img_tit")[0].style.backgroundPosition = "-20px -36px";
+								$1(".error_img_tit")[1].style.backgroundPosition = "-20px -36px";
+							}
+						}
+					}
+					//4.发送请求
+					//如果是post的话，必须设置请求头
+					xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded"); //设置请求头
+					let str = `userPhone=${$1("#userPhone").value}&userPass=${$1("#userPass").value}`;
+					xhr.send(str); //键值对，要跟后端交流的，后端根据键取值
+				}
+			}
+		}
+	}
+
+
+	function $1(str) {
+		if (str.charAt(0) == "#") {
+			return document.getElementById(str.substring(1));
+		} else if (str.charAt(0) == ".") {
+			return document.getElementsByClassName(str.substring(1));
+		} else {
+			return document.getElementsByTagName(str);
+		}
+	}
+</script>

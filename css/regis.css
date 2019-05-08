@@ -1,0 +1,176 @@
+.header {
+  width: 100%;
+  background-color: white; }
+  .header .header_box {
+    background-color: white;
+    width: 1190px;
+    overflow: hidden;
+    margin: 0 auto;
+    line-height: 90px;
+    font-size: 16px;
+    color: #333; }
+    .header .header_box .logo_and_regis {
+      display: inline-block;
+      width: 400px; }
+      .header .header_box .logo_and_regis img {
+        width: 250px;
+        height: 33px;
+        margin: 28px 0 0;
+        float: left;
+        cursor: pointer; }
+      .header .header_box .logo_and_regis span {
+        margin-left: 10px; }
+    .header .header_box .has_login {
+      display: inline-block;
+      float: right; }
+      .header .header_box .has_login a {
+        color: #333; }
+      .header .header_box .has_login .im_login {
+        display: inline-block;
+        width: 100px;
+        position: relative; }
+        .header .header_box .has_login .im_login .dire_trangle {
+          display: inline-block;
+          float: left;
+          width: 0;
+          height: 0;
+          border-top: 4px solid transparent;
+          border-left: 5px solid #000;
+          border-bottom: 4px solid transparent;
+          margin-top: 5px;
+          margin-left: 2px;
+          position: absolute;
+          left: 65px;
+          top: 36px; }
+      .header .header_box .has_login .im_login:hover a {
+        cursor: pointer;
+        color: #cb3733;
+        text-decoration: underline;
+        border-left-color: #cb3733; }
+
+.regins_content_box {
+  width: 100%;
+  float: left;
+  min-width: 1190px;
+  height: 804px;
+  background: transparent url(../img/login_Bg.jpg) no-repeat scroll 50% 0; }
+  .regins_content_box .regins_content {
+    width: 1190px;
+    height: 100%;
+    margin: 0 auto; }
+    .regins_content_box .regins_content .regins_content_items {
+      width: 600px;
+      height: 500px;
+      margin-left: 80px;
+      margin-top: 60px;
+      font-size: 14px;
+      padding: 10px 0; }
+      .regins_content_box .regins_content .regins_content_items .picture_verify, .regins_content_box .regins_content .regins_content_items .phone_verify, .regins_content_box .regins_content .regins_content_items .phone_code_verify, .regins_content_box .regins_content .regins_content_items .passWord, .regins_content_box .regins_content .regins_content_items .re_password_verify {
+        position: relative; }
+        .regins_content_box .regins_content .regins_content_items .picture_verify p, .regins_content_box .regins_content .regins_content_items .phone_verify p, .regins_content_box .regins_content .regins_content_items .phone_code_verify p, .regins_content_box .regins_content .regins_content_items .passWord p, .regins_content_box .regins_content .regins_content_items .re_password_verify p {
+          text-align: center;
+          width: 80px;
+          float: left;
+          line-height: 32px; }
+        .regins_content_box .regins_content .regins_content_items .picture_verify .input_text, .regins_content_box .regins_content .regins_content_items .phone_verify .input_text, .regins_content_box .regins_content .regins_content_items .phone_code_verify .input_text, .regins_content_box .regins_content .regins_content_items .passWord .input_text, .regins_content_box .regins_content .regins_content_items .re_password_verify .input_text {
+          width: 300px;
+          height: 30px;
+          float: left;
+          margin: 0 10px 0 20px;
+          outline: none;
+          border: 1px solid #cccccc;
+          text-indent: 20px; }
+        .regins_content_box .regins_content .regins_content_items .picture_verify .picture_code, .regins_content_box .regins_content .regins_content_items .phone_verify .picture_code, .regins_content_box .regins_content .regins_content_items .phone_code_verify .picture_code, .regins_content_box .regins_content .regins_content_items .passWord .picture_code, .regins_content_box .regins_content .regins_content_items .re_password_verify .picture_code {
+          display: inline-block;
+          width: 120px;
+          height: 32px;
+          line-height: 32px;
+          letter-spacing: 5px;
+          font-size: 16px;
+          text-align: center;
+          cursor: pointer;
+          border: 1px solid #ccc; }
+        .regins_content_box .regins_content .regins_content_items .picture_verify .error_img_tit, .regins_content_box .regins_content .regins_content_items .phone_verify .error_img_tit, .regins_content_box .regins_content .regins_content_items .phone_code_verify .error_img_tit, .regins_content_box .regins_content .regins_content_items .passWord .error_img_tit, .regins_content_box .regins_content .regins_content_items .re_password_verify .error_img_tit {
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          background: url(../img/LoginIn-icon.png) -20px -18px;
+          position: absolute;
+          left: 370px;
+          top: 8px;
+          display: none; }
+      .regins_content_box .regins_content .regins_content_items .picture_errorTip, .regins_content_box .regins_content .regins_content_items .phone_errorTip, .regins_content_box .regins_content .regins_content_items .phone_code_errorTip, .regins_content_box .regins_content .regins_content_items .passWord_errorTip, .regins_content_box .regins_content .regins_content_items .re_password_errorTip {
+        width: 620px;
+        margin-left: 110px;
+        height: 34px;
+        line-height: 24px; }
+      .regins_content_box .regins_content .regins_content_items .phone_verify, .regins_content_box .regins_content .regins_content_items .phone_code_verify, .regins_content_box .regins_content .regins_content_items .passWord, .regins_content_box .regins_content .regins_content_items .re_password_verify {
+        overflow: hidden;
+        position: relative; }
+        .regins_content_box .regins_content .regins_content_items .phone_verify .get_random_code, .regins_content_box .regins_content .regins_content_items .phone_code_verify .get_random_code, .regins_content_box .regins_content .regins_content_items .passWord .get_random_code, .regins_content_box .regins_content .regins_content_items .re_password_verify .get_random_code {
+          display: inline-block;
+          background: #ccc;
+          color: #fff;
+          width: 120px;
+          height: 32px;
+          text-align: center;
+          line-height: 32px;
+          cursor: pointer; }
+      .regins_content_box .regins_content .regins_content_items .phone_errorTip, .regins_content_box .regins_content .regins_content_items .phone_code_errorTip, .regins_content_box .regins_content .regins_content_items .passWord_errorTip, .regins_content_box .regins_content .regins_content_items .re_password_errorTip {
+        overflow: hidden;
+        height: 34px; }
+      .regins_content_box .regins_content .regins_content_items .regis_btn {
+        margin-left: 100px;
+        width: 300px;
+        height: 30px;
+        line-height: 30px;
+        background-color: #999;
+        color: #fff;
+        font-size: 14px;
+        letter-spacing: 2px;
+        text-align: center;
+        cursor: pointer; }
+      .regins_content_box .regins_content .regins_content_items .read_change {
+        margin-left: 100px;
+        font-size: 12px;
+        line-height: 30px; }
+        .regins_content_box .regins_content .regins_content_items .read_change .check_box {
+          width: 16px;
+          height: 16px;
+          float: left;
+          margin-top: 6px; }
+        .regins_content_box .regins_content .regins_content_items .read_change span {
+          color: #9d9d9d; }
+        .regins_content_box .regins_content .regins_content_items .read_change a {
+          color: black; }
+        .regins_content_box .regins_content .regins_content_items .read_change a:hover {
+          color: #ed2e26; }
+      .regins_content_box .regins_content .regins_content_items .use_email_box {
+        width: 300px;
+        margin-left: 100px; }
+        .regins_content_box .regins_content .regins_content_items .use_email_box .use_email {
+          float: right;
+          text-align: center;
+          width: 79px;
+          text-decoration: underline;
+          color: #9d9d9d;
+          font-size: 12px; }
+          .regins_content_box .regins_content .regins_content_items .use_email_box .use_email li {
+            display: inline-block; }
+          .regins_content_box .regins_content .regins_content_items .use_email_box .use_email li:nth-child(1) {
+            float: left; }
+          .regins_content_box .regins_content .regins_content_items .use_email_box .use_email li:nth-child(2) {
+            width: 0;
+            height: 0;
+            border-top: 4px solid transparent;
+            border-left: 5px solid #9d9d9d;
+            border-bottom: 4px solid transparent;
+            margin-top: 2px;
+            margin-left: 2px; }
+        .regins_content_box .regins_content .regins_content_items .use_email_box .use_email:hover li {
+          cursor: pointer;
+          color: #cb3733;
+          text-decoration: underline;
+          border-left-color: #cb3733; }
+
+/*# sourceMappingURL=regis.css.map */

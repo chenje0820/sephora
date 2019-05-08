@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>SEPHORA丝芙兰官网－国际化妆品购物网站!</title>
+		<link type="image/x-icon" href="img/favicon.ico" rel="shortcut icon">
+		<link rel="stylesheet" href="css/detail.css">
+		<link rel="stylesheet" href="css/common.css">
+	</head>
+	<body>
+		<!-- heade部分 -->
+		<div class="header_box">
+			<div class="header_content">
+				<div class='cont_left'>
+					<span class="welcome">欢迎来到丝芙兰</span>
+					<a href="login.html">请登录</a>|
+					<a href="regis.html">免费注册</a>
+					<a href="#">手机验证码登录</a>
+				</div>
+				<div class='cont_center'>
+					<marquee class="cont_marquee" style="line-height:34px;" direction="up" scrollamount="3" scrolldelay=10 onmouseover=this.stop()
+					 onmouseout=this.start()>
+						<a href="#">丝芙兰正品</a><br>
+						<a href="#">常见问题</a>
+					</marquee>
+				</div>
+				<div class='cont_right'>
+					<span class="my_sephora">
+						<span class="imgs"></span>
+						<a class="my_sephora_a" href="login.html">我的丝芙兰</a>
+						<!-- 倒三角 -->
+						<span class='direct_top'></span>
+						<!-- 划过时显示我的订单 -->
+						<span class="my_order">
+							<a href="#">我的订单</a>
+							<span class='big_direct_bot'></span>
+						</span>
+					</span>
+					<span>
+						<img src="img/vip-club.png" width="12px" alt="">
+						<a href="#">会员俱乐部</a>
+					</span>
+					<span>
+						<img src="img/mobile-sephora.png" width="7px" alt="">
+						<a href="#">手机丝芙兰</a>
+					</span>
+					<span>
+						<a href="#">美力事业</a>
+					</span>
+					<span>
+						<a href="#">帮助中心</a>
+					</span>
+				</div>
+			</div>
+		</div>
+		<!-- search部分	 -->
+		<div class='search'>
+			<div class='search_box'>
+				<!-- logo部分 -->
+				<div class='search_logo'>
+					<a href="homepage.html"><img src="img/sep_top_Logo.png" alt=""></a>
+				</div>
+				<!-- 搜索框 -->
+				<div class="search_nav">
+					<div class="searc_inputBox">
+						<!-- input框内的value值的改变 -->
+						<input class="input_nav_info" type="text" placeholder="春季补水小心机">
+						<span class="search_btn">搜索</span>
+						<!-- 点击搜索框的时候出现的历史记录-->
+						<div class="search_main_info">
+							<div class="history_info">
+								<h3 class="history_info_tit">
+									<span>历史浏览</span>
+									<a href="#"><span>下一批</span></a>
+								</h3>
+								<ul class="history_info_content">
+									<!-- 动态创建历史浏览中的信息-->
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+							<div class='hot_info'>
+								<h3 class="hot_info_tit">热门搜索</h3>
+								<ul class='hot_info_content'>
+									<li>
+										<a href="#">换季护肤</a>
+									</li>
+									<li>
+										<a href="#">热门防晒盘点</a>
+									</li>
+									<li>
+										<a href="#">邂逅春日香氛</a>
+									</li>
+									<li>
+										<a href="#">唇色星光</a>
+									</li>
+									<li>
+										<a href="#">春日奇思妙香</a>
+									</li>
+									<li>
+										<a href="#">经典口碑精华</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="search_infoIntem">
+						<a href="#">换季护肤</a>
+						<a href="#">热门防晒盘点</a>
+						<a href="#">经典口碑精华</a>
+						<a href="#">唇色星光</a>
+						<a href="#">春日奇思妙香</a>
+					</div>
+				</div>
+				<!-- 购物车部分 -->
+				<div class="my_shoppcar">
+					<a href="#">
+						<img src="img/shopping_bag.png" width="18px" height="26px">
+						购物袋<span class="shop_num">&nbsp;0&nbsp;</span>件
+					</a>
+					<!-- 购物袋提示信息 -->
+					<div class="minicar_tit_box">
+						<div class="tit_info">
+							<span class="package"></span>
+							<div class="tit_info_right">
+								<p>购物车内暂时没有商品，登录后将显示您之前加入的商品</p>
+								<a href="login.html">登录</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- nav部分 -->
+		<div class='navigation'>
+			<div class="navigate_box">
+				<div class="allshop_intem">
+					<span class="allshop_intem_tit">全部商品类目</span>
+					<div class='per_intem_infos'>
+					</div>
+					<!-- 全部商品类的菜单 -->
+					<em class='img_left'></em>
+					<!-- 菜单项 -->
+					<div class="menu_box">
+						<!-- jQuery引入aside页面 -->
+					</div>
+				</div>
+				<div class="nav_info">
+					<ul>
+						<li>
+							<a href="#">畅销榜单</a>
+						</li>
+						<li>
+							<a href="#">独家发售</a>
+						</li>
+						<li>
+							<a href="#">礼物套装</a>
+						</li>
+						<li class="all_grands_label">
+							<a href="#">全部品牌</a>
+						</li>
+						<!-- 全部品牌的框-->
+						<div class="all_grands">
+							<div class="all_grands_nav_left">
+								<input class="all_grands_inputBox" type="text" value="搜索">
+								<div class="all_words">
+									<a href="#point_A">A</a>
+									<a href="#point_B">B</a>
+									<a class="point_t" href="#point_C">C</a>
+									<a href="#point_D">D</a>
+									<a href="#point_E">E</a>
+									<a href="#point_F">F</a>
+									<a href="#point_C">G</a>
+									<a href="#point_C">H</a>
+									<a href="#point_C">I</a>
+									<a href="#point_C">J</a>
+									<a href="#point_C">K</a>
+									<a href="#point_C">L</a>
+									<a href="#point_C">M</a>
+									<a href="#point_C">N</a>
+									<a href="#point_C">O</a>
+									<a href="#point_C">P</a>
+									<a class="has">Q</a>
+									<a href="#point_C">R</a>
+									<a href="#point_C">S</a>
+									<a href="#point_C">T</a>
+									<a href="#point_C">U</a>
+									<a href="#point_C">V</a>
+									<a href="#point_C">W</a>
+									<a class="has">X</a>
+									<a href="#point_C">Y</a>
+									<a class="has">Z</a>
+									<a href="#point_C">0-9</a>
+								</div>
+							</div>
+							<div class="all_grands_nav_right">
+								<div id="point_A" class="letter">
+									<div class="per_grand_info_tit">A</div>
+									<ul class="per_grand_info_content">
+										<li><a href="#">ACQUADIPARMA 帕尔玛之水</a></li>
+										<li><a href="#">ALGENIST 奥杰尼</a></li>
+										<li><a href="#">AMAZINGCOSMETICS® 奥玛珍</a></li>
+										<li><a href="#">ANNASUI 安娜苏</a></li>
+										<li><a href="#">AtelierCologne 欧珑</a></li>
+									</ul>
+								</div>
+								<div id="point_B" class="letter">
+									<div class="per_grand_info_tit">B</div>
+									<ul class="per_grand_info_content">
+										<li><a href="#">BALENCIAGA 巴黎世家</a></li>
+										<li><a href="#">beautyblender 美妆蛋</a></li>
+										<li><a href="#">Belloite 贝洛之舞</a></li>
+										<li><a href="#">BENEFIT 贝玲妃</a></li>
+										<li><a href="#">AtelierCologne 欧珑</a></li>
+									</ul>
+								</div>
+								<div id="point_C" class="letter">
+									<div class="per_grand_info_tit">C</div>
+									<ul class="per_grand_info_content">
+										<li><a href="#">ACQUADIPARMA 帕尔玛之水</a></li>
+										<li><a href="#">ALGENIST 奥杰尼</a></li>
+										<li><a href="#">AMAZINGCOSMETICS® 奥玛珍</a></li>
+										<li><a href="#">ANNASUI 安娜苏</a></li>
+										<li><a href="#">AtelierCologne 欧珑</a></li>
+									</ul>
+								</div>
+								<div id="point_D" class="letter">
+									<div class="per_grand_info_tit">D</div>
+									<ul class="per_grand_info_content">
+									</ul>
+								</div>
+								<div id="point_E" class="letter">
+									<div class="per_grand_info_tit">E</div>
+									<ul class="per_grand_info_content">
+									</ul>
+								</div>
+								<div id="point_F" class="letter">
+									<div class="per_grand_info_tit">F</div>
+									<ul class="per_grand_info_content">
+									</ul>
+								</div>
+								....
+							</div>
+						</div>
+						<li>
+							<a href="#">预约中心</a>
+						</li>
+					</ul>
+				</div>
+				<div class="nav_promote">
+					<a href="#"><img src="img/navigation_shopping.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+		<!-- detail部分 -->
+		<div class="detail_box">
+			<div class="detail">
+				<!-- 导航小提示 -->
+				<div class="detail_nav">
+					<a href="#">首页</a>>
+					<a href="#">护肤</a>>
+					<a href="#">惠选套装</a>>
+					<a href="#">惠选套装</a>>
+					<a href="#">兰蔻</a>>
+					<span>兰蔻新清滢柔肤水（粉水）惠选套装</span>
+				</div>
+				<!-- 商品的细节 -->
+				<div class="shop_detail">
+					<!-- 左边 -->
+					<div class="shop_detail_left">
+						<div class="shop_img">
+							<div class="big_ico"></div>
+							<img src="img/glass.jpg" class="picture" alt="兰蔻新清滢柔肤水（粉水）惠选套装" title="兰蔻新清滢柔肤水（粉水）惠选套装">
+
+							<!-- 放大镜 -->
+							<div class="mirrorGlass"></div>
+							<div class="showBox"></div>
+						</div>
+						<div class="control_module">
+							<div class="arrows">
+								<div class="arrows_Left"></div>
+							</div>
+							<ul class="shop_per_photo">
+								<li><img src="img/detail_1.jpg" alt=""></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div class="arrows">
+								<div class="arrows_Right"></div>
+							</div>
+						</div>
+					</div>
+					<!-- 右边部分 -->
+					<div class="shop_detail_right">
+						<!-- 描述部分 -->
+						<div class="title">
+							<ul class="shop_detail_direc">
+								<li>新客专享 | SK-II PITERA™入门体验装</li>
+								<li>SK-II FIRST EXP KIT CN</li>
+								<li>详细活动规则需更新至最新版app后查看，价值818
+								</li>
+							</ul>
+							<div class="shop_logo"><a href="#"><img src="img/s_logo.jpg" alt="LANCOME" title="LANCOME"></a></div>
+						</div>
+						<!-- 价钱 -->
+						<div class="price">
+							<ul class='detail_price'>
+								<li class="price_tit">价格</li>
+								<li>
+									<p>￥<span>590</span></p>
+									<p>价值￥<span>630</span></p>
+								</li>
+								<li>新品</li>
+							</ul>
+							<ul class="sephora_rule">
+								<li class="f"></li>
+								<li>新客专享产品活动规则</li>
+								<li class="dire"></li>
+								<!--新客规则 -->
+								<div class="rule_content_box">
+									<div class="rule_content">
+										<h4>新客专享产品活动规则</h4>
+										<span></span>
+										<p>1. 丝芙兰官网上所有新客专享权益仅限新人享有，新人指从未注册过丝芙兰会员的顾客或虽然注册过会员但从未在丝芙兰门店或丝芙兰线上渠道购买过商品（粉卡）的顾客。未注册过的顾客，需先完成会员注册，才能购买新客专享产品。</p>
+										<p>2. 任何人通过不正当手段（包括但不限于侵犯第三人合法权益、作弊、扰乱系统、实施网络攻击、批量注册、机器注册账户等方式）获得新客专享活动资格的，丝芙兰有权撤销活动资格并关闭相关交易订单</p>
+										<div class='close'> 关闭</div>
+									</div>
+								</div>
+							</ul>
+						</div>
+
+						<!-- 活动 -->
+						<div class="acitve">
+							<ul class="active_info">
+								<li class="active_tit">活动</li>
+								<li class="active_list_info">
+									<ul class="active_list">
+										<li>
+											<span>满赠</span>
+											<p>购买任意纪梵希彩妆产品，即赠纪梵希哑光唇釉三色体验装1份，数量有限，赠完为止。</p>
+
+										</li>
+										<li>
+											<span>满赠</span>
+											<p>购买纪梵希哑光唇釉任意色号，即赠纪梵希灵动钥匙扣一只（套装和惠选套装除外），数量有限，赠完为止。</p>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="promotion">
+								<li class="list_c">
+									<span>促销详情</span>
+									<em class="direc"></em>
+
+									<!-- 促销的具体详情 -->
+									<div class="promote_info">
+										<span class="dire_top"></span>
+										<div class="promote_info_instruct">
+											<div class="instruct_tit">
+												<span>满赠</span>
+												<p>购买任意纪梵希彩妆产品，即赠纪梵希哑光唇釉三色体验装1份，数量有限，赠完为止。</p>
+											</div>
+											<div class="instruct_cont">
+												<p>赠品档位一: 满1件即可获赠1件赠品</p>
+												<div class="instruct_cont_c">
+													<div class="c_img_num">
+														<img src="img/pro_20190505_150x150.jpg" alt="">
+														<span>X1</span>
+													</div>
+													<div class="c-dire">纪梵希哑光唇釉三色体验装 </div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="list_c">
+									<span>促销详情</span>
+									<em class="direc"></em>
+
+									<!-- 促销的具体详情 -->
+									<div class="promote_info">
+										<span class="dire_top"></span>
+										<div class="promote_info_instruct">
+											<div class="instruct_tit">
+												<span>满赠</span>
+												<p>购买任意纪梵希彩妆产品，即赠纪梵希哑光唇釉三色体验装1份，数量有限，赠完为止。</p>
+											</div>
+											<div class="instruct_cont">
+												<p>赠品档位一: 满1件即可获赠1件赠品</p>
+												<div class="instruct_cont_c">
+													<div class="c_img_num">
+														<img src="img/pro_20190505_150x150.jpg" alt="">
+														<span>X1</span>
+													</div>
+													<div class="c-dire">纪梵希哑光唇釉三色体验装 </div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- 套装 -->
+
+						<div class="style">
+							<p>规格</p>
+							<!-- 护肤品类的 -->
+							<div class="style_one">新包装</div>
+							<!--彩妆类的样式 -->
+							<!-- <div class="style_two">
+								<ul class="color">
+									<li class="now">
+										<div class="per_color p_now"></div>
+									</li>
+									<li>
+										<div class="per_color"></div>
+									</li>
+									<li>
+										<div class="per_color"></div>
+									</li>
+									<li>
+										<div class="per_color"></div>
+									</li>
+									<li>
+										<div class="per_color"></div>
+									</li>
+									<li>
+										<div class="per_color"></div>
+									</li>
+									<li>
+										<div class="per_color"></div>
+									</li>
+									<li>
+										<div class="per_color"></div>
+									</li>
+									<li>
+										<div class="per_color"></div>
+									</li>
+									<li>
+										<div class="per_color"></div>
+									</li>
+									<li>
+										<div class="per_color"></div>
+									</li>
+									<li>
+										<div class="per_color"></div>
+									</li>
+									<li>
+										<div class="per_color"></div>
+									</li>
+									<li>
+										<div class="per_color"></div>
+									</li>
+									<li>
+										<div class="per_color"></div>
+									</li>
+									<li>
+										<div class="per_color"></div>
+									</li>
+									<li>
+										<div class="per_color"></div>
+									</li>
+									<li>
+										<div class="per_color"></div>
+									</li>
+									<li>
+										<div class="per_color"></div>
+									</li>
+								</ul>
+								<div class="select_color">
+									<p>3ml，N°101 裸粉豆沙</p>
+									<div class="bottom_icon"></div>
+								</div>
+							</div> -->
+						</div>
+						<!-- 数量 -->
+						<div class='num_box'>
+							<ul class='count'>
+								<li class='num'>1</li>
+								<li class="add_and_sub">
+									<span class='add'>
+										<em></em>
+									</span>
+									<span class="sub">
+										<em></em>
+									</span>
+								</li>
+							</ul>
+							<ul class='get_into_car'>
+								<li class="get_into_car_btn">加入购物车</li>
+								<li></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="guestLike_and_mainInfo_box">
+			<div class='guestLike_and_mainInfo'>
+				<!-- 猜你喜欢部分 -->
+				<div class="guest_like">
+					<div class="guest_like_tit">猜你喜欢</div>
+					<ul class="guest_like_list">
+						<li class="item_c">
+							<a href="#">
+								<img src="img/guest_1_20190505.jpg" alt="">
+								<p>SK-II</p>
+								<div class="back_line"></div>
+								<div class="dire_text">SK-II PITERA™经典体验套装</div>
+								<div>
+									<span>￥</span>
+									<span>690</span>
+								</div>
+							</a>
+						</li>
+						<li class="item_c">
+							<a href="#">
+								<img src="img/guest_1_20190505.jpg" alt="">
+								<p>SK-II</p>
+								<div class="back_line"></div>
+								<div class="dire_text">SK-II PITERA™经典体验套装</div>
+								<div>
+									<span>￥</span>
+									<span>690</span>
+								</div>
+							</a>
+						</li>
+						<li class="item_c">
+							<a href="#">
+								<img src="img/guest_1_20190505.jpg" alt="">
+								<p>SK-II</p>
+								<div class="back_line"></div>
+								<div class="dire_text">SK-II PITERA™经典体验套装</div>
+								<div>
+									<span>￥</span>
+									<span>690</span>
+								</div>
+							</a>
+						</li>
+						<li class="item_c">
+							<a href="#">
+								<img src="img/guest_1_20190505.jpg" alt="">
+								<p>SK-II</p>
+								<div class="back_line"></div>
+								<div class="dire_text">SK-II PITERA™经典体验套装</div>
+								<div>
+									<span>￥</span>
+									<span>690</span>
+								</div>
+							</a>
+						</li>
+						<li class="item_c">
+							<a href="#">
+								<img src="img/guest_1_20190505.jpg" alt="">
+								<p>SK-II</p>
+								<div class="back_line"></div>
+								<div class="dire_text">SK-II PITERA™经典体验套装</div>
+								<div>
+									<span>￥</span>
+									<span>690</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="main_info">
+					<ul class="main_info_tit">
+						<li class="first_i">基本信息</li>
+						<li>所有评论</li>
+						<li>产品咨询</li>
+						<li>配送信息</li>
+					</ul>
+					<div class="main_info_content">
+						<ul class="sku">
+							<li>适用人群: 女士</li>
+							<li>适用部位: 面部</li>
+							<li>功效: 保湿补水/提亮肤色/细致毛孔</li>
+							<li>适合肤质: 各种肤质</li>
+							<li>质地: 水液/片状</li>
+							<li>规格: 套装</li>
+							<li>货号: 479118</li>
+						</ul>
+						<dl class='sku_dire'>
+							<dt>
+								<span class="dire_ico"></span>
+								<p>产品描述</p>
+							</dt>
+							<dd>1.护肤精华露75ml：让肌肤晶莹剔透。为肌肤打好基础，改善肌肤状态，让脸上的问题淡化，肌肤变细致。</dd>
+							<dd>2.SK-II嫩肤清莹露30ml:有再次清洁功能，有效去除肌肤表面的老旧角质，收敛毛孔，加强皮肤吸收养分的能力，皮肤光滑细。</dd>
+							<dd>3.SK-II护肤面膜1p：补充水分，光滑肌肤，帮助肌肤透亮，调理皮质平衡，舒缓日晒后肌肤。</dd>
+						</dl>
+						<dl class="product_place">
+							<dt>
+								<span class="dire_ico"></span>
+								<p>产地</p>
+							</dt>
+							<dd>日本</dd>
+						</dl>
+						<!-- 评论部分 -->
+						<div class="comments">
+							<div class="comments_tit">
+								<h2>商品评论</h2>
+								<p>COMMENTS</p>
+								<div class="short_line"></div>
+							</div>
+							<div class="no_comments_tit_box">
+								<div class="no_comments_tit">
+									<span class="pen_icon"></span>
+									<p>此商品暂时还没有评价哦~</p>
+								</div>
+							</div>
+							<div class="comments_info">主要信息部分</div>
+						</div>
+						<!-- 咨询部分 -->
+						<div class="ask">
+							<div class="ask_tit">
+								<h2>产品咨询</h2>
+								<p> Q&A </p>
+								<div class="short_line"></div>
+							</div>
+							<div class="no_ask_tit_box">
+								<div class="no_ask_tit">
+									<span class="problem_icon"></span>
+									<p>有疑问, 来发布第一个问题吧~</p>
+									<div class="ask_btn">我要咨询</div>
+								</div>
+							</div>
+						</div>
+						<!-- 支付与配送 -->
+						<div class="pay_and_send">
+							<div class="pay_and_send_tit">
+								<h2>支付与配送</h2>
+								<p> PAYMENT&SHIPPING </p>
+								<div class="short_line"></div>
+							</div>
+							<div class="pay_and_send_tit_box">
+								<h4>选择支付方式</h4>
+								<p>目前我们提供以下2种支付方式</p>
+								<ul>
+									<li class="type">1. 在线支付</li>
+									<li class="main">支持支付宝、微信、及目前市场所有主流银行卡的在线支付。请在确认订单后选择相应支付界面进行支付。</li>
+									<li class="type">2. 货到付款</li>
+									<li class="main">您的货款将在订单送达后，由送货员直接收取，请在签收后付款，并在送货员在场情况下开箱验货。(货到付款金额不能超过2万元)</li>
+								</ul>
+							</div>
+						</div>
+						<!-- 价格声明 -->
+						<div class="price_state">
+							<div class="price_state_tit">
+								<h2>价格声明</h2>
+								<p>PRICE STATEMENT</p>
+								<div class="short_line"></div>
+							</div>
+							<div class="price_state_tit_box">
+								<p>本店商品标注的促销价，为此商品的实际售价。本店标注的其他价格信息，如划线价、专柜价、建议零售价、价值等，为仅供消费者参考的市场价格信息，来源为有关商品实体店的柜台售价、品牌方建议零售价或者根据有关商品正装产品售价和容量推算的价值等，便于您了解市场行情和价格变动。但是，由于地区、时间和行情波动因素，这些价格的实际情况可能与本店标注的其他价格信息有所不同。</p>
+							</div>
+						</div>
+						<!-- 退换货规定 -->
+						<div class="return_rule">
+							<div class="return_rule_tit">
+								<h2>退换货规定</h2>
+								<p>RETURN PROVISIONS</p>
+								<div class="short_line"></div>
+							</div>
+							<div class="price_state_tit_box">
+								<ul class="price_state_tit">
+									<li>1. 我们不接受包装盒已被开封的商品的退换货（商品外包装盒上的透明封装胶纸已被撕开同样视为开封），请您谅解！</li>
+									<li>2. 所有未开封的商品如需退换请于签收日算起14日内办理，退货收到并确认无误后于一周内办理退款。</li>
+									<li>3. 如您需整单退换，请您务必将当次订单中所有商品（包括免费赠品、包装礼盒）全部退回。</li>
+									<li>4. 因顾客自身原因造成退换货时，由顾客承担商品退回时的邮资和再次发送时的运费。</li>
+									<li>5. 如该商品曾被积分，退货后，该笔金额产生的积分将被从积分数中扣除。</li>
+									<li>6.如您希望调换其它等价商品，请您先为需要退回的订单办理退货，我们收到退货并确认无误后，将为您发送新的商品。若您希望调换的为非等价商品，请您先为您的订单办理退货及退款，然后至网站另行订购您喜欢的其它商品，我们将另行发送。</li>
+									<li>7. 如您在使用了于丝芙兰网站购买的产品后出现过敏症状，在提供相关医院出具的有效证明后，我们将接受此产品的退货。</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- footer部分 -->
+		<!-- copyRight版权部分 -->
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/mover.js"></script>
+<script type="text/javascript" src="js/bannerPic.js"></script>
+<script type="text/javascript" src="js/homepage.js"></script>
+<script type="text/javascript">
+	// nav部分
+	$(".menu_box").load("aside.html >.allshop_intem_menu_box");
+	$(".allshop_intem").mouseover(function() {
+		$(".allshop_intem_menu_box").css({
+			"display": "block"
+		})
+		$(".menu_box").css({
+			"display": "block"
+		})
+		$(".one_stage_li").mouseleave(function() {
+			$(".allshop_intem_menu_box").css({
+				"display": "none"
+			})
+		})
+	})
+	//放大镜
+	$(".shop_img").mousemove(function(event) {
+		//样式的设置
+		$(".mirrorGlass").css({
+			display: "block"
+		});
+		$(".showBox").css({
+			display: "block"
+		});
+		let evt = event || window.event;
+		//数据
+		let left1 = evt.pageX - this.offsetLeft - $(".mirrorGlass").innerWidth() / 2;
+		let top1 = evt.pageY - this.offsetTop - $(".mirrorGlass").innerHeight() / 2;
+		//2.边界处理
+		//left的处理
+		if (left1 < 0) {
+			left1 = 0;
+		} else if (left1 > $(".shop_img").innerWidth() - $(".mirrorGlass").innerWidth()) {
+			left1 = $(".shop_img").innerWidth() - $(".mirrorGlass").innerWidth();
+		}
+		//top的处理
+		if (top1 < 0) {
+			top1 = 0;
+		} else if (top1 > $(".shop_img").innerHeight() - $(".mirrorGlass").innerHeight()) {
+			top1 = $(".shop_img").innerHeight() - $(".mirrorGlass").innerHeight();
+		}
+		//3.外观呈现
+		$(".mirrorGlass").css({
+			left: left1 + "px"
+		})
+		$(".mirrorGlass").css({
+			top: top1 + "px"
+		})
+		$(".showBox").css({
+			backgroundPosition: `${-1*2*left1}px ${-1*2*top1}px`
+		});
+	})
+	$(".shop_img").mouseleave(function() {
+		$(".mirrorGlass").css({
+			display: "none"
+		});
+		$(".showBox").css({
+			display: "none"
+		});
+	});
+
+	//数量的加减
+	$(window).load(function() {
+		let count = 1;
+		$(".add").click(function() {
+			//1.改变数值
+			count++;
+			//边界处理
+			if (count >= 2) {
+				$(".sub").children().css({
+					"background-position": "-40px -18px"
+				});
+			}
+			//外观呈现
+			$(".num").html(count);
+		})
+
+		$(".sub").click(function() {
+			if (count > 1) {
+				count--;
+				if (count == 1) {
+					count = 1;
+					$(this).children().css({
+						"background-position": "-40px -42px"
+					})
+				}
+				$(".num").html(count);
+			}
+		})
+	});
+	//新客规则
+	$(".dire").click(function() {
+		$(".rule_content_box").css({
+			"display": "block"
+		})
+		$(".close").click(function() {
+			$(".rule_content_box").css({
+				"display": "none"
+			})
+		})
+	})
+	// 促销的具体详情
+	let isChoose = true;
+	for (let i = 0; i < $(".direc").length; i++) {
+		$(".direc").eq(i).click(function() {
+			if (isChoose) {
+				$(".promote_info").eq(i).css({
+					"display": "block"
+				})
+				isChoose = false;
+				$(this).css({
+					"background-position": "-40px -18px"
+				})
+			} else {
+				$(".promote_info").eq(i).css({
+					"display": "none"
+				})
+				$(this).css({
+					"background-position": "-50px -18px"
+				})
+
+				isChoose = true;
+			}
+		})
+	}
+
+	//加入购物车按钮的颜色变化
+	$(".get_into_car").mouseover(function() {
+		$(".get_into_car").toggleClass("changeColor");
+	});
+
+	$(".get_into_car").mouseout(function() {
+		$(".get_into_car").toggleClass("changeColor");
+	});
+
+	//我要咨询按钮的颜色变化
+	$(".ask_btn").mouseover(function() {
+		$(".ask_btn").toggleClass("changeColor1");
+	});
+
+	$(".ask_btn").mouseout(function() {
+		$(".ask_btn").toggleClass("changeColor1");
+	});
+</script>

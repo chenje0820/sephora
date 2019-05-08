@@ -1,0 +1,346 @@
+body, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, html, input, li, ol, p, select, span, strong, table, tbody, td, textarea, th, thead, tr, ul {
+  margin: 0;
+  padding: 0;
+  outline: 0; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+.header_box {
+  width: 100%;
+  background-color: black; }
+  .header_box .header_content {
+    width: 1190px;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 auto;
+    font-size: 12px; }
+    .header_box .header_content a {
+      color: white; }
+    .header_box .header_content a:hover {
+      color: red; }
+    .header_box .header_content .cont_left {
+      color: white;
+      float: left; }
+      .header_box .header_content .cont_left a {
+        margin: 0 12px; }
+      .header_box .header_content .cont_left span {
+        margin: 0 12px; }
+    .header_box .header_content .cont_center {
+      float: left;
+      margin: 0 22px; }
+      .header_box .header_content .cont_center .cont_marquee {
+        height: 36px;
+        width: 100px;
+        font-size: 16px;
+        border: 7px solid black;
+        box-sizing: border-box; }
+    .header_box .header_content .cont_right {
+      width: 500px;
+      float: right; }
+      .header_box .header_content .cont_right span {
+        margin-left: 22px;
+        display: inline-block; }
+      .header_box .header_content .cont_right .my_sephora {
+        position: relative; }
+        .header_box .header_content .cont_right .my_sephora .imgs {
+          width: 12px;
+          height: 12px;
+          background: url(../img/my-sephora.png);
+          margin-bottom: -2px; }
+        .header_box .header_content .cont_right .my_sephora .direct_top, .header_box .header_content .cont_right .my_sephora .my_order .big_direct_bot {
+          width: 10px;
+          height: 6px;
+          background: url(../img/top_angle_w.png) -2px -16px;
+          margin-left: 0px;
+          margin-bottom: 1px; }
+        .header_box .header_content .cont_right .my_sephora .my_order {
+          width: 90px;
+          height: 30px;
+          background-color: white;
+          line-height: 30px;
+          text-align: center;
+          font-size: 14px;
+          margin-left: 0;
+          position: absolute;
+          left: 20px;
+          top: 36px;
+          border: 1px solid #c8c8c8;
+          border-top: 0;
+          display: none;
+          z-index: 4; }
+          .header_box .header_content .cont_right .my_sephora .my_order a {
+            color: black; }
+          .header_box .header_content .cont_right .my_sephora .my_order a:hover {
+            color: red; }
+          .header_box .header_content .cont_right .my_sephora .my_order .big_direct_bot {
+            width: 15px;
+            height: 6px;
+            background-position: -38px -1px;
+            position: absolute;
+            left: 40%;
+            top: -7px; }
+
+.search, .search_scroll {
+  width: 100%;
+  background-color: white; }
+  .search .search_box, .search_scroll .search_box {
+    width: 1190px;
+    padding-top: 24px;
+    margin: 0 auto; }
+    .search .search_box .search_logo, .search_scroll .search_box .search_logo {
+      width: 320px;
+      height: 36px;
+      float: left; }
+      .search .search_box .search_logo img, .search_scroll .search_box .search_logo img {
+        width: 240px;
+        height: 32px;
+        display: block; }
+    .search .search_box .search_nav, .search_scroll .search_box .search_nav {
+      width: 650px;
+      height: 60px;
+      float: left; }
+      .search .search_box .search_nav .searc_inputBox, .search_scroll .search_box .search_nav .searc_inputBox {
+        height: 34px;
+        line-height: 34px;
+        border: 1px solid #b5b5b5;
+        position: relative; }
+        .search .search_box .search_nav .searc_inputBox input, .search_scroll .search_box .search_nav .searc_inputBox input {
+          width: 540px;
+          height: 34px;
+          text-indent: 20px;
+          border: none;
+          float: left; }
+        .search .search_box .search_nav .searc_inputBox .search_btn, .search_scroll .search_box .search_nav .searc_inputBox .search_btn {
+          float: left;
+          width: 108px;
+          text-align: center;
+          font-size: 16px;
+          color: white;
+          background-color: #000000; }
+        .search .search_box .search_nav .searc_inputBox .search_main_info, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info {
+          width: 540px;
+          background-color: white;
+          border: 1px solid #b5b5b5;
+          border-top: 0;
+          position: absolute;
+          left: -1px;
+          top: 35px;
+          display: none; }
+          .search .search_box .search_nav .searc_inputBox .search_main_info .history_info, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .history_info, .search .search_box .search_nav .searc_inputBox .search_main_info .hot_info, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .hot_info {
+            font-size: 12px;
+            padding: 12px 20px 0;
+            border-bottom: 2px solid #f5f5f5; }
+            .search .search_box .search_nav .searc_inputBox .search_main_info .history_info .history_info_tit, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .history_info .history_info_tit, .search .search_box .search_nav .searc_inputBox .search_main_info .hot_info .history_info_tit, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .hot_info .history_info_tit, .search .search_box .search_nav .searc_inputBox .search_main_info .hot_info .hot_info_content, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .hot_info .hot_info_content {
+              display: flex;
+              justify-content: space-between; }
+              .search .search_box .search_nav .searc_inputBox .search_main_info .history_info .history_info_tit span:last-child, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .history_info .history_info_tit span:last-child, .search .search_box .search_nav .searc_inputBox .search_main_info .hot_info .history_info_tit span:last-child, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .hot_info .history_info_tit span:last-child, .search .search_box .search_nav .searc_inputBox .search_main_info .hot_info .hot_info_content span:last-child, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .hot_info .hot_info_content span:last-child {
+                color: #666;
+                font-weight: 100; }
+            .search .search_box .search_nav .searc_inputBox .search_main_info .history_info .history_info_content, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .history_info .history_info_content, .search .search_box .search_nav .searc_inputBox .search_main_info .hot_info .history_info_content, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .hot_info .history_info_content {
+              display: flex;
+              flex-wrap: wrap;
+              font-size: 14px;
+              line-height: 20px;
+              padding-bottom: 10px; }
+              .search .search_box .search_nav .searc_inputBox .search_main_info .history_info .history_info_content a, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .history_info .history_info_content a, .search .search_box .search_nav .searc_inputBox .search_main_info .hot_info .history_info_content a, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .hot_info .history_info_content a {
+                color: black; }
+              .search .search_box .search_nav .searc_inputBox .search_main_info .history_info .history_info_content a:hover, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .history_info .history_info_content a:hover, .search .search_box .search_nav .searc_inputBox .search_main_info .hot_info .history_info_content a:hover, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .hot_info .history_info_content a:hover {
+                font-weight: 900; }
+              .search .search_box .search_nav .searc_inputBox .search_main_info .history_info .history_info_content li, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .history_info .history_info_content li, .search .search_box .search_nav .searc_inputBox .search_main_info .hot_info .history_info_content li, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .hot_info .history_info_content li {
+                flex: 1;
+                padding: 0 5px; }
+              .search .search_box .search_nav .searc_inputBox .search_main_info .history_info .history_info_content .product_img, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .history_info .history_info_content .product_img, .search .search_box .search_nav .searc_inputBox .search_main_info .hot_info .history_info_content .product_img, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .hot_info .history_info_content .product_img {
+                flex: 1;
+                text-align: center; }
+                .search .search_box .search_nav .searc_inputBox .search_main_info .history_info .history_info_content .product_img img, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .history_info .history_info_content .product_img img, .search .search_box .search_nav .searc_inputBox .search_main_info .hot_info .history_info_content .product_img img, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .hot_info .history_info_content .product_img img {
+                  width: 90px;
+                  height: 90px; }
+              .search .search_box .search_nav .searc_inputBox .search_main_info .history_info .history_info_content .product_brand, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .history_info .history_info_content .product_brand, .search .search_box .search_nav .searc_inputBox .search_main_info .hot_info .history_info_content .product_brand, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .hot_info .history_info_content .product_brand {
+                text-align: center; }
+              .search .search_box .search_nav .searc_inputBox .search_main_info .history_info .history_info_content .product_price, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .history_info .history_info_content .product_price, .search .search_box .search_nav .searc_inputBox .search_main_info .hot_info .history_info_content .product_price, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .hot_info .history_info_content .product_price {
+                text-align: center; }
+          .search .search_box .search_nav .searc_inputBox .search_main_info .hot_info, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .hot_info {
+            border: 0; }
+            .search .search_box .search_nav .searc_inputBox .search_main_info .hot_info .hot_info_content, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .hot_info .hot_info_content {
+              display: flex;
+              flex-wrap: wrap; }
+              .search .search_box .search_nav .searc_inputBox .search_main_info .hot_info .hot_info_content li, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .hot_info .hot_info_content li {
+                display: inline-block;
+                float: left;
+                margin: 0 8px 8px 0;
+                background: #f5f5f5; }
+                .search .search_box .search_nav .searc_inputBox .search_main_info .hot_info .hot_info_content li a, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .hot_info .hot_info_content li a {
+                  font-size: 12px;
+                  display: block;
+                  color: #8a8a8a;
+                  padding: 0 10px; }
+                .search .search_box .search_nav .searc_inputBox .search_main_info .hot_info .hot_info_content li a:hover, .search_scroll .search_box .search_nav .searc_inputBox .search_main_info .hot_info .hot_info_content li a:hover {
+                  font-weight: 600; }
+      .search .search_box .search_nav .search_infoIntem a, .search_scroll .search_box .search_nav .search_infoIntem a {
+        display: inline-block;
+        color: #acacac;
+        padding: 0 4px;
+        font-size: 12px; }
+      .search .search_box .search_nav .search_infoIntem a:hover, .search_scroll .search_box .search_nav .search_infoIntem a:hover {
+        color: #ee0000; }
+    .search .search_box .my_shoppcar, .search_scroll .search_box .my_shoppcar {
+      width: 188px;
+      height: 34px;
+      line-height: 34px;
+      font-size: 16px;
+      float: right;
+      border: 1px solid #c8c8c8;
+      text-align: center;
+      position: relative; }
+      .search .search_box .my_shoppcar a, .search_scroll .search_box .my_shoppcar a {
+        color: #000000; }
+      .search .search_box .my_shoppcar img, .search_scroll .search_box .my_shoppcar img {
+        margin: -5px 5px; }
+      .search .search_box .my_shoppcar .shop_num, .search_scroll .search_box .my_shoppcar .shop_num {
+        color: #ee0000; }
+      .search .search_box .my_shoppcar .minicar_tit_box, .search_scroll .search_box .my_shoppcar .minicar_tit_box {
+        width: 412px;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        border: 1px solid #ddd;
+        padding: 22px 0;
+        z-index: 30;
+        position: absolute;
+        top: 35px;
+        left: -224px;
+        cursor: pointer;
+        overflow: hidden;
+        display: none; }
+        .search .search_box .my_shoppcar .minicar_tit_box .tit_info, .search_scroll .search_box .my_shoppcar .minicar_tit_box .tit_info {
+          margin-right: 30px;
+          line-height: 20px; }
+          .search .search_box .my_shoppcar .minicar_tit_box .tit_info .package, .search_scroll .search_box .my_shoppcar .minicar_tit_box .tit_info .package {
+            display: inline-block;
+            float: left;
+            width: 64px;
+            height: 85px;
+            margin: 0 10px 0 30px;
+            background: url(../img/package.png) no-repeat;
+            background-size: 100%; }
+          .search .search_box .my_shoppcar .minicar_tit_box .tit_info .tit_info_right, .search_scroll .search_box .my_shoppcar .minicar_tit_box .tit_info .tit_info_right {
+            padding-top: 10px;
+            text-align: left; }
+            .search .search_box .my_shoppcar .minicar_tit_box .tit_info .tit_info_right a, .search_scroll .search_box .my_shoppcar .minicar_tit_box .tit_info .tit_info_right a {
+              display: inline-block;
+              margin-top: 5px;
+              background-color: red;
+              line-height: 20px;
+              width: 60px;
+              color: white;
+              text-align: center; }
+    .search .search_box .my_shoppcar:hover .minicar_tit_box, .search_scroll .search_box .my_shoppcar:hover .minicar_tit_box {
+      display: block; }
+
+.search:after, .search_scroll:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both; }
+
+.search_box:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both; }
+
+.copyRight_box {
+  width: 100%;
+  line-height: 21px;
+  background-color: #000;
+  font-size: 12px;
+  color: #6f6f6f;
+  overflow: hidden; }
+  .copyRight_box .copyRight {
+    width: 1190px;
+    margin: 0 auto;
+    padding: 30px 0;
+    text-align: center; }
+    .copyRight_box .copyRight a {
+      color: #6f6f6f;
+      margin: 0 22px; }
+    .copyRight_box .copyRight .police_img {
+      padding-left: 30px;
+      width: 10px;
+      height: 20px;
+      text-indent: 20px;
+      background: url(../img/police_img.png) no-repeat; }
+
+.search_scroll {
+  position: fixed;
+  left: 0;
+  top: -84px;
+  z-index: 20; }
+
+.left_aisde_nav {
+  width: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 5px;
+  font-size: 12px;
+  line-height: 16px;
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  top: 120px;
+  display: none; }
+  .left_aisde_nav li {
+    display: block;
+    margin: 20px 0;
+    color: #2c2a2a; }
+
+.left_aisde_nav li.active {
+  color: #ee0000; }
+
+.active :hover {
+  color: #ee0000; }
+
+.right_aside_nav {
+  font-size: 14px;
+  text-align: center;
+  width: 40px;
+  background-color: rgba(170, 170, 170, 0.6);
+  display: none; }
+  .right_aside_nav .my_account_all, .right_aside_nav .my_shop_car, .right_aside_nav .connect_service, .right_aside_nav .mobile_sephora, .right_aside_nav .come_to_top {
+    width: 40px;
+    height: 40px; }
+    .right_aside_nav .my_account_all .my_account, .right_aside_nav .my_shop_car .my_account, .right_aside_nav .connect_service .my_account, .right_aside_nav .mobile_sephora .my_account, .right_aside_nav .come_to_top .my_account, .right_aside_nav .my_shop_car .shop_car, .right_aside_nav .connect_service .service, .right_aside_nav .mobile_sephora .sephora, .right_aside_nav .come_to_top .back_top {
+      position: relative; }
+      .right_aside_nav .my_account_all .my_account span, .right_aside_nav .my_shop_car .my_account span, .right_aside_nav .connect_service .my_account span, .right_aside_nav .mobile_sephora .my_account span, .right_aside_nav .come_to_top .my_account span, .right_aside_nav .my_shop_car .shop_car span, .right_aside_nav .connect_service .service span, .right_aside_nav .mobile_sephora .sephora span, .right_aside_nav .come_to_top .back_top span {
+        display: inline-block; }
+      .right_aside_nav .my_account_all .my_account .sprite_text, .right_aside_nav .my_shop_car .my_account .sprite_text, .right_aside_nav .connect_service .my_account .sprite_text, .right_aside_nav .mobile_sephora .my_account .sprite_text, .right_aside_nav .come_to_top .my_account .sprite_text, .right_aside_nav .my_shop_car .shop_car .sprite_text, .right_aside_nav .connect_service .service .sprite_text, .right_aside_nav .mobile_sephora .sephora .sprite_text, .right_aside_nav .come_to_top .back_top .sprite_text {
+        background-color: #555353;
+        width: 80px;
+        height: 40px;
+        line-height: 40px;
+        color: white;
+        position: absolute;
+        top: -25px;
+        right: 40px;
+        display: none; }
+      .right_aside_nav .my_account_all .my_account .sprite_photo, .right_aside_nav .my_shop_car .my_account .sprite_photo, .right_aside_nav .connect_service .my_account .sprite_photo, .right_aside_nav .mobile_sephora .my_account .sprite_photo, .right_aside_nav .come_to_top .my_account .sprite_photo, .right_aside_nav .my_shop_car .shop_car .sprite_photo, .right_aside_nav .connect_service .service .sprite_photo, .right_aside_nav .mobile_sephora .sephora .sprite_photo, .right_aside_nav .come_to_top .back_top .sprite_photo {
+        color: white;
+        width: 40px;
+        height: 40px;
+        background: url(../img/sprite_toolbar_new.png) 0 0px; }
+    .right_aside_nav .my_account_all .my_account:hover .sprite_text, .right_aside_nav .my_shop_car .my_account:hover .sprite_text, .right_aside_nav .connect_service .my_account:hover .sprite_text, .right_aside_nav .mobile_sephora .my_account:hover .sprite_text, .right_aside_nav .come_to_top .my_account:hover .sprite_text, .right_aside_nav .my_shop_car .shop_car:hover .sprite_text, .right_aside_nav .connect_service .service:hover .sprite_text, .right_aside_nav .mobile_sephora .sephora:hover .sprite_text, .right_aside_nav .come_to_top .back_top:hover .sprite_text {
+      display: block; }
+    .right_aside_nav .my_account_all .my_account:hover .sprite_photo, .right_aside_nav .my_shop_car .my_account:hover .sprite_photo, .right_aside_nav .connect_service .my_account:hover .sprite_photo, .right_aside_nav .mobile_sephora .my_account:hover .sprite_photo, .right_aside_nav .come_to_top .my_account:hover .sprite_photo, .right_aside_nav .my_shop_car .shop_car:hover .sprite_photo, .right_aside_nav .connect_service .service:hover .sprite_photo, .right_aside_nav .mobile_sephora .sephora:hover .sprite_photo, .right_aside_nav .come_to_top .back_top:hover .sprite_photo {
+      background-color: #555353; }
+  .right_aside_nav .my_shop_car .shop_car .sprite_photo {
+    background-position: 0 -40px; }
+  .right_aside_nav .connect_service .service .sprite_photo {
+    background-position: 0 -160px; }
+  .right_aside_nav .mobile_sephora .sephora .sprite_photo {
+    background-position: 0 -240px; }
+  .right_aside_nav .come_to_top .back_top .sprite_photo {
+    background-position: 0 -280px; }
+
+/*# sourceMappingURL=common.css.map */

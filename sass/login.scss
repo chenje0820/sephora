@@ -1,0 +1,210 @@
+@charset "utf-8";
+.header{
+	width:100%;
+	background-color:white;
+	.header_box{
+		width:1190px;
+		overflow: hidden;
+		margin:0 auto;
+		line-height:90px;
+		font-size:16px;
+		color: #333;
+		background-color:white;
+		.logo_and_regis{
+			display:inline-block;
+			width:400px;
+			img{
+				width: 250px;
+				height: 33px;
+				margin: 28px 0 0;
+				float: left;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.login_content_box{
+	width:100%;
+	.login_content{
+		min-width: 1190px;
+		width: 100%;
+		height: 610px;
+		z-index: 1;
+		margin:0 auto;
+		background: transparent url(../img/hp_login.jpg) no-repeat scroll 50% 0;
+		.login_content_box{
+			width:1190px;
+			height:100%;
+			margin:0 auto;
+			position:relative;
+			.login_content_items{
+				width: 300px;
+				height: 380px;
+				padding:0 30px;
+				background-color:white;
+				z-index:3;
+				position:absolute;
+				right:30px;
+				top:20%;
+				.login_sephora{
+					width:100%;
+					height:32px;
+					line-height: 32px;
+					color: black;
+					font-size:18px;
+					margin-top:20px;	
+					letter-spacing: 2px;
+				}
+				.error_tip{
+					width:100%;
+					height:32px;
+					margin:5px 0;
+					color:#ff0700;
+					font-size:12px;
+				}
+				.login_phone_num{
+					width:100%;
+					height:32px;
+					line-height:32px;
+					border:1px solid #cccccc;
+					color:#cccccc;
+					box-sizing: border-box;
+					display: flex;
+					flex:1;
+					margin-bottom:20px;
+					.people_photo{
+						width:20px;
+						height:20px;
+						background: url(../img/LoginIn-icon.png);
+						background-position: 0 -20px;
+						margin:5px;
+					}
+					.phone{
+						width:243px;
+						border-right:1px solid b;
+						outline: none;
+						border:none;
+						color:#767676;
+						font-size:14px;
+					}
+					.error_img_tit{
+						@extend .people_photo;
+						width:18px;
+						height:18px;
+						background-position:-20px  -18px;
+						display:none;
+					}
+				}
+				.passWord_num{
+					@extend .login_phone_num;
+					.passWord_photo{
+						@extend .people_photo;
+						background-position:0 0;
+					}
+					.passWord{
+						@extend .phone;
+					}
+				}
+				.forget_password{
+					display: inline-block;
+					color:#919191;
+					margin-bottom:20px;
+					font-size:14px;
+				}
+				.forget_password:hover{
+					color:red;
+				}
+				.login_btn{
+					width:100%;
+					height:40px;
+					line-height:40px;
+					letter-spacing: 2px;
+					font-size:16px;
+					color:white;
+					text-align: center;
+					background-color:#999999;
+					cursor: pointer;
+				}
+				.read_change{
+					width:100%;
+					font-size:12px;
+					line-height:32px;
+					letter-spacing: -1px;
+					overflow: hidden;
+					.check_box{
+						margin-top:10px;
+						float:left;
+					}
+					p{
+						float:left;
+					}
+				}
+				.read_change p:nth-child(2) {
+					color:#919191;
+				}
+				.read_change p:nth-child(4) {
+					color:#919191;
+				}
+				.read_change p:nth-child(3) {
+					cursor: pointer;				
+				}
+				.read_change p:nth-child(5) {
+					cursor: pointer;				
+				}
+			}
+			//脚部
+			.free_regis{
+				width:100%;
+				height:50px;
+				color:#919191;
+				font-size:12px;
+				margin-top:10px;
+				.free_regis_left{
+					float:left;
+					li{
+						float:left;
+						width:24px;
+						height:24px;
+					}
+					li:nth-child(1){
+						background:url(../img/LoginIn-icon.png);
+						background-position: -56px 0px;
+					}
+					li:nth-child(2){
+						background:url(../img/LoginIn-icon.png);
+						background-position: -56px -24px;
+						margin:0 10px;
+					}
+					li:nth-child(3){
+						background:url(../img/LoginIn-icon.png);
+						background-position: -56px 24px;
+					}			
+				}
+				.free_regis_right{
+					float:right;
+					li{
+						float:left;
+					}
+					li:nth-child(2){
+						a{
+							float:left;
+							color:#f12526;
+						}
+						a:hover{
+							text-decoration: underline;
+						}
+						span{
+							float:left;
+							width: 0;
+							height:0;
+							border:5px solid transparent;
+							border-left-color:#f12526;
+							margin:3px 0 0 2px;
+						}
+					}
+				}
+			}	
+		}
+	}
+}
